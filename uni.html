@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Top University</title>
+</head>
+<body>
+    <header class="header">
+        <!-- Menu -->
+        <div class="navar">
+            <a href="uni.html"><img src="images/logo1.png" alt="Logo"></a>
+            <nav class="nav">
+                <nav id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul class="nav__lists">
+                    <li class="nav__items"><a class="nav__links" href="#">Home</a></li>
+                    <li class="nav__items"><a class="nav__links" href="#">About Us</a></li>
+                    <li class="nav__items"><a class="nav__links" href="#">Courses</a></li>
+                    <li class="nav__items"><a class="nav__links" href="#">Blog</a></li>
+                    <li class="nav__items"><a class="nav__links" href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <i class="fa fa-bars" onclick="showemenu()" ></i>
+        </div>
+
+        <!-- Title and Text -->
+        <div class="header-content">
+            <h1 class="big-title">World's Largest Universities</h1>
+            <p class="small-title">Here we will review various important universities in the world. So you can get the best information with the recommendations of this site.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </header>
+    <section class="courses">
+        <h2>Suggested Courses</h2>
+        <p>Here we will get familiar with and review various types of courses</p>
+        <div class="row">
+            <div class="course__col">
+                <h3>Beginner Level</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sed facilis corrupti sint quae eos odio nesciunt quis officia aliquam.</p>
+            </div>
+            <div class="course__col">
+                <h3>Intermediate Level</h3>
+                <p>Illo aliquam iste ex dolorem ad, itaque a. Magni nisi cumque fugit quam assumenda itaque exercitationem est consequuntur, sint praesentium.</p>
+            </div>
+            <div class="course__col">
+                <h3>Advanced Level</h3>
+                <p>Minus atque quod eius. Tempora, dolorem quod. Numquam tempore, ullam, eaque laudantium voluptatem, placeat iste delectus neque quos ex fuga.</p>
+            </div>
+        </div>
+    </section>
+    <!-- intro -->
+     <section class="intro">
+        <h2>Educational Centers</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ullam porro labore. Possimus labore magnam, vel exercitationem quam consectetur totam?</p>
+        <div class="row">
+            <div class="intro__col">
+                <img src="images/l1.jpg" alt="London">
+                <div class="layar"><h3>London</h3></div>
+            </div>
+            <div class="intro__col">
+                <img src="images/e1.jpg" alt="Italy">
+                <div class="layar"><h3>Italy</h3></div>
+            </div>
+            <div class="intro__col">
+                <img src="images/k1.jpg" alt="Canada">
+               <div class="layar"> <h3>Canada</h3></div>
+            </div>
+        </div>
+     </section>
+     <!-- facilities -->
+      <section class="facilities">
+        <h2>Educational Facilities</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, sit!</p>
+        <div class="row">
+            <div class="facilities__col">
+                <img src="images/n2.jpg" alt="Library and classrooms">
+                <h3>Library and Classrooms</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quia?</p>
+            </div>
+            <div class="facilities__col">
+                <img src="images/n6.jpg" alt="Sports services">
+                <h3>Sports Services</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, accusantium?</p>
+            </div>
+            <div class="facilities__col">
+                <img src="images/n7.jpg" alt="Cafeteria and restaurant">
+                <h3>Cafeteria and Restaurant</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, impedit.</p>
+            </div>
+        </div>
+      </section>
+      <!-- comment -->
+       <section class="comment">
+        <h2>Graduates' Comments</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="row">
+            <div class="comment__col">
+                <img src="images/d3.jpg" alt="Nazanin Eslami">
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate amet perferendis libero consequatur pariatur natus rem veniam corporis, ad vitae.</p>
+                    <h3>Naznin Eslami</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="comment__col">
+                <img src="images/d2.jpg" alt="Sara Mohammadi">
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate amet perferendis libero consequatur pariatur natus rem veniam corporis, ad vitae.</p>
+                    <h3>Sara Mohammadi</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+       </section>
+       <hr>
+       <footer class="footer">
+        <h4>Contact Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sequi?</p>
+        <div class="icons">
+        </div>
+       </footer>
+
+    <script>
+        var navlinks=document.getElementById("navlinks");
+        function showemenu(){
+            navlinks.style.display="block"
+        }
+        function hidemenu(){
+            navlinks.style.display="none";
+        }
+    </script>
+</body>
+</html>

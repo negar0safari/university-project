@@ -1,0 +1,354 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%; 
+    font-family: Arial, sans-serif; 
+}
+
+/* Header */
+.header {
+    min-height: 100vh;
+    width: 100%; 
+    background-image: url('images/c2.webp'); 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    color: white; 
+    position: relative;
+}
+
+/* عنوان بزرگ */
+.big-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background-color:  rgba(39, 38, 38, 0.74);
+    height: 50px;
+}
+
+/* متن کوچک */
+.small-title {
+    font-size: 15px; 
+    line-height: 1.6; 
+    background-color: rgba(39, 38, 38, 0.801);
+    height: 60px;
+   
+}
+
+/* Nav */
+.navar {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 2% 6%;
+    background-color: rgba(56, 53, 53, 0.5); 
+    z-index: 1000; 
+}
+
+.navar img {
+    width: 15rem; 
+    position: absolute;
+    bottom: -130px;
+    left: 20px;
+}
+
+.nav {
+    flex: 1;
+    text-align: left; 
+}
+
+.nav__items {
+    display: inline-block;
+    padding: 8px 12px;
+}
+/* چرا افتر گذاشته سطر پایین !!!!!!!!!!!!!!!!!!!!!!!! */
+.nav__items::after{ 
+    display: block;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color:rgb(185, 70, 70) ;
+    transition: .5s;
+}
+/* و همین طور اینجاااااااااا */
+.nav__items:hover::after{
+    width: 100%;
+}
+
+.nav__links{
+    color: white;
+    font-size: 18px;
+    text-decoration: none; 
+}
+/* دکمه */
+.btn {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #414a50c0; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-size: 2rem; 
+    transition: background-color 0.3s ease; 
+}
+.btn:hover {
+    border: 1px solid var(rgb(172, 185, 196));
+    background-color: #050505; 
+}
+.nav i{
+    display: none;
+    
+}
+/* responsive */
+@media(max-width:760px){
+    .big-title{
+        font-size: 2rem;
+    }
+    nav{
+        position: absolute;
+        background-color: rgba(26, 40, 59, 0.849);
+        height: 100vh;
+        width: 10rem;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    .navar i{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+   
+}
+/* courses */
+.courses{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10rem;
+}
+.courses h2{
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+.courses p{
+    color: rgb(8, 8, 8);
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.2rem;
+    padding: 1rem;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course__col{
+    background-color:rgb(145, 196, 196);
+    flex-basis: 31%;
+    border-radius: 1rem;
+    margin-bottom: 5%;
+    padding: 2rem 1.2rem;
+    transition: .5s;
+}
+.course__col:hover{
+    box-shadow: 0 0 20px rgb(12, 98, 168);
+
+}
+.course__col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+@media(max-width:768px){
+    .row{
+        flex-direction: column;
+    }
+}
+/* intro */
+.intro{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5rem;
+
+}
+.intro__col{
+    position: relative;
+    flex-basis: 32%;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+     overflow: hidden; 
+}
+.intro img{
+    width: 100%;
+    display: block;
+}
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+}
+
+/* Section Intro */
+.intro {
+    width: 80%; 
+    margin: 0 auto; 
+    text-align: center; 
+    padding-top: 5rem; 
+}
+
+.intro h2 {
+    font-size: 2rem; 
+    margin-bottom: 1.5rem; 
+    color: #333; 
+}
+
+.intro p {
+    font-size: 1rem; 
+    color: #666; 
+    max-width: 800px; 
+    margin: 0 auto 2rem; 
+}
+
+/* Row */
+.row {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 2rem; 
+}
+
+/* Columns */
+.intro__col {
+    flex-basis: 32%; 
+    border-radius: 1rem;
+    margin-bottom: 3rem; 
+    background-color: white; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.intro__col:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+}
+
+.intro__col img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-top-left-radius: 1rem; 
+    border-top-right-radius: 1rem;
+}
+
+.intro__col h3 {
+    font-size: 1.5rem; 
+    margin: 1rem 0; 
+    color: #333; 
+}
+.layar{
+    background-color:transparent ;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+.layar:hover{
+    background-color: rgba(73, 197, 197, 0.637);
+}
+.layar h3{
+    width: 100%;
+    font-weight: 500;
+    color: #050505;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+.layar:hover h3{
+    bottom:44%;
+    opacity: 1;
+}
+/* facilities */
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10rem;
+}
+.facilities__col{
+    flex-basis: 31%;
+    border-radius: 1rem;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facilities__col img{
+    width: 100%;
+    border-radius: 1rem;
+}
+.facilities__col h3{
+    margin-top: 16px;
+    margin-bottom: 1rem;
+}
+/* comments */
+.comment{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10rem;
+}
+.comment__col{
+    display: flex;
+    flex-basis: 44%;
+    border-radius: 1rem;
+    margin-bottom: 5%;
+    text-align: left;
+    background-color: rgb(124, 170, 209);
+    padding: 2.5rem;
+    cursor: pointer;
+}
+.comment__col img{
+    height: 10rem;
+    margin-left: 5%;
+    margin-right: 3rem;
+    border-radius: 50%;
+}
+.comment__col h3{
+    margin-top: 1.5rem;
+}
+.comment__col .fa{
+    color: rgb(104, 104, 192);
+    cursor: pointer;
+}
+.comment__col .fa ~ .fa{
+    color: #666;
+}
+
